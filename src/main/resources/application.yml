@@ -39,5 +39,4 @@ magic-api:
     table-name: magic_api_file  # 数据库中的表名
     prefix: /magic-api  # 前缀
 #    location: classpath:magic-api
-  editor-config: classpath:magic-api/magic-editor-config.js #自定义编辑器配置
 # 其它配置请参考 https://ssssssss.org/config/
