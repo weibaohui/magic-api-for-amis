@@ -1,6 +1,7 @@
 package org.ssssssss.example.interceptor;
 
 import org.ssssssss.magicapi.interceptor.SQLInterceptor;
+import org.ssssssss.magicapi.model.RequestEntity;
 import org.ssssssss.magicapi.modules.BoundSql;
 
 import java.util.Arrays;
@@ -17,10 +18,11 @@ public class CustomSqlInterceptor implements SQLInterceptor {
 	 * 执行SQL之前
 	 */
 	@Override
-	public void preHandle(BoundSql boundSql) {
+	public void preHandle(BoundSql boundSql, RequestEntity requestEntity) {
 		// 改写SQL
 		boundSql.setSql(boundSql.getSql());
 		// 改写参数
 		boundSql.setParameters(Arrays.asList(boundSql.getParameters()));
 	}
+
 }

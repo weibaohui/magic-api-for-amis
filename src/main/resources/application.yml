@@ -6,6 +6,9 @@ server:
     min-response-size: 128
 # 配置主数据源
 spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
   datasource:
     url: jdbc:mysql://localhost/magic?useSSL=false&serverTimezone=Asia/Shanghai
     username: root
