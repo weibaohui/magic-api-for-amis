@@ -45,6 +45,11 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.9.2</version>
         </dependency>
+        <dependency>
+            <groupId>org.jeecgframework</groupId>
+            <artifactId>autopoi-web</artifactId>
+            <version>1.2.4</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
