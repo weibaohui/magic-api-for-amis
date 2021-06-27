@@ -66,10 +66,14 @@ public class SimpleAuthorizationInterceptor implements AuthorizationInterceptor 
      */
     @Override
     public MagicUser getUserByToken(String token) throws MagicLoginException {
-        String[] userInfo = getUserInfoByToken(token);
-        MagicUser magicUser = new MagicUser(userInfo[0], userInfo[0], getToken(userInfo[0], userInfo[1]));
-        if (users.containsKey(magicUser.getUsername()) && users.get(magicUser.getUsername()).equals(userInfo[1])) {
-            return magicUser;
+        try {
+            String[] userInfo = getUserInfoByToken(token);
+            MagicUser magicUser = new MagicUser(userInfo[0], userInfo[0], getToken(userInfo[0], userInfo[1]));
+            if (users.containsKey(magicUser.getUsername()) && users.get(magicUser.getUsername()).equals(userInfo[1])) {
+                return magicUser;
+            }
+        } catch (Exception e) {
+            log.error("token无效,请重新登录,如果还有问题，可手动清除localStorage中magic-token");
         }
         throw new MagicLoginException("token无效");
     }
