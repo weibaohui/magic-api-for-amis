@@ -13,7 +13,7 @@ spring:
     url: jdbc:mysql://localhost/magic?useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: 123456789
-  data:
+#  data:
     # 配置mongo数据源
 #    mongodb:
 #      host: localhost
