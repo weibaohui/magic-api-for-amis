@@ -1,4 +1,4 @@
-package org.ssssssss.magicapi.example.interceptor;
+package org.ssssssss.example.interceptor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
