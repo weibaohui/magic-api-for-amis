@@ -92,6 +92,9 @@ public class SimpleAuthorizationInterceptor implements AuthorizationInterceptor 
      */
     @Override
     public boolean allowVisit(MagicUser magicUser, HttpServletRequest request, Authorization authorization) {
+        if(denyOptions==null){
+            return true;
+        }
         String[] denyOption = denyOptions.get(magicUser.getUsername()).split(",");
         List<String> list = Arrays.asList(denyOption);
         return !list.contains(authorization.name());
