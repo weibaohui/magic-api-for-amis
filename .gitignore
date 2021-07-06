@@ -21,3 +21,23 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+*.iml
+*.flattened-pom.xml
+
+# ide files #
+.classpath
+.project
+.mymetadata
+/.idea/
+/captures/
+.DS_Store
+.idea/
+
+# setting folders #
+.settings/
+.svn/
+.bin/
+.git/
+target/
+lib/

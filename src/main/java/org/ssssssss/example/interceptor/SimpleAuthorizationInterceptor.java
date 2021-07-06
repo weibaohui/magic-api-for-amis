@@ -1,4 +1,4 @@
-package org.ssssssss.magicapi.example.interceptor;
+package org.ssssssss.example.interceptor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -92,6 +92,9 @@ public class SimpleAuthorizationInterceptor implements AuthorizationInterceptor 
      */
     @Override
     public boolean allowVisit(MagicUser magicUser, HttpServletRequest request, Authorization authorization) {
+        if(denyOptions==null){
+            return true;
+        }
         String[] denyOption = denyOptions.get(magicUser.getUsername()).split(",");
         List<String> list = Arrays.asList(denyOption);
         return !list.contains(authorization.name());
