@@ -10,7 +10,7 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
-    url: jdbc:mysql://localhost/magic?useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost/magic?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=Asia/Shanghai
     username: root
     password: 123456789
 #  data:
