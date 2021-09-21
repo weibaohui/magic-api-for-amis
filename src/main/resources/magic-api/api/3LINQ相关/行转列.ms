@@ -1,18 +1,23 @@
 {
+  "properties" : { },
   "id" : "da433c8708c74cb3ad3482f8fdb09119",
   "script" : null,
   "groupId" : "8b4ffb920a6e4758ae142ccda0685519",
   "name" : "行转列",
-  "createTime" : 1615983153343,
-  "updateTime" : 1615983153343,
+  "createTime" : null,
+  "updateTime" : 1632192538946,
+  "lock" : null,
   "method" : "GET",
   "path" : "/pivot",
   "parameters" : [ ],
   "option" : "[]",
   "requestBody" : "",
   "headers" : [ ],
+  "paths" : [ ],
   "responseBody" : null,
   "description" : null,
+  "requestBodyDefinition" : null,
+  "responseBodyDefinition" : null,
   "optionMap" : { }
 }
 ================================

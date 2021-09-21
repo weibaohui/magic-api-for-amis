@@ -1,18 +1,23 @@
 {
+  "properties" : { },
   "id" : "48a3e16b86d54388a7e5571eac477d72",
   "script" : null,
   "groupId" : "2b0ce800b6c543efa284ae695e14e4eb",
   "name" : "模拟分页",
-  "createTime" : 1615983958385,
-  "updateTime" : 1615983958385,
+  "createTime" : null,
+  "updateTime" : 1632192356360,
+  "lock" : null,
   "method" : "GET",
   "path" : "/page",
   "parameters" : [ ],
   "option" : "[]",
   "requestBody" : "",
   "headers" : [ ],
+  "paths" : [ ],
   "responseBody" : null,
   "description" : null,
+  "requestBodyDefinition" : null,
+  "responseBodyDefinition" : null,
   "optionMap" : { }
 }
 ================================

@@ -1,18 +1,23 @@
 {
+  "properties" : { },
   "id" : "f211d0eaf72d478e9100412577642dd1",
   "script" : null,
   "groupId" : "1534958e40ff4037a50bd9d3c25bceb5",
   "name" : "扩展运算符",
-  "createTime" : 1615816769927,
-  "updateTime" : 1615816769927,
+  "createTime" : null,
+  "updateTime" : 1632192313276,
+  "lock" : null,
   "method" : "GET",
   "path" : "/spread",
   "parameters" : [ ],
   "option" : "[]",
   "requestBody" : "",
   "headers" : [ ],
+  "paths" : [ ],
   "responseBody" : null,
   "description" : null,
+  "requestBodyDefinition" : null,
+  "responseBodyDefinition" : null,
   "optionMap" : { }
 }
 ================================

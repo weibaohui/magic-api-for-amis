@@ -1,18 +1,23 @@
 {
+  "properties" : { },
   "id" : "6328b06b544d4b7a9fd95497fab1717c",
   "script" : null,
   "groupId" : "aa81e76ddfd7471a97aa423abd80b2aa",
   "name" : "关联",
-  "createTime" : 1615983353928,
-  "updateTime" : 1615983353928,
+  "createTime" : null,
+  "updateTime" : 1632192523522,
+  "lock" : null,
   "method" : "GET",
   "path" : "/join",
   "parameters" : [ ],
   "option" : "[]",
   "requestBody" : "",
   "headers" : [ ],
+  "paths" : [ ],
   "responseBody" : null,
   "description" : null,
+  "requestBodyDefinition" : null,
+  "responseBodyDefinition" : null,
   "optionMap" : { }
 }
 ================================

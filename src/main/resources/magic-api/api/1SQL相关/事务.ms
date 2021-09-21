@@ -1,18 +1,23 @@
 {
+  "properties" : { },
   "id" : "c1f0bc60cedd445faa62042cf9ce35e8",
   "script" : null,
   "groupId" : "08c2af4fd56543e690b14515d83d66ae",
   "name" : "事务",
-  "createTime" : 1615818724895,
-  "updateTime" : 1615818724895,
+  "createTime" : null,
+  "updateTime" : 1632192556731,
+  "lock" : null,
   "method" : "GET",
   "path" : "/transaction",
   "parameters" : [ ],
   "option" : "[]",
   "requestBody" : "",
   "headers" : [ ],
+  "paths" : [ ],
   "responseBody" : null,
   "description" : null,
+  "requestBodyDefinition" : null,
+  "responseBodyDefinition" : null,
   "optionMap" : { }
 }
 ================================
