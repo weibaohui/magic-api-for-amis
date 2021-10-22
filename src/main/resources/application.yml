@@ -27,14 +27,6 @@ spring:
 #    port: 6379
 #    database: 4
 #    timeout: 5000
-logging:
-  level:
-    org:
-      springframework:
-        jdbc:
-          core:
-            JdbcTemplate: DEBUG #打印SQL
-            StatementCreatorUtils: TRACE  #打印SQL参数
 magic-api:
   web: /magic/web
   resource:
