@@ -4,6 +4,9 @@ import org.apache.commons.lang3.math.NumberUtils;
 import org.ssssssss.magicapi.model.Page;
 import org.ssssssss.magicapi.provider.PageProvider;
 import org.ssssssss.script.MagicScriptContext;
+import org.ssssssss.script.runtime.RuntimeContext;
+
+import java.util.Objects;
 
 /**
  * 自定义获取分页参数
@@ -14,10 +17,10 @@ import org.ssssssss.script.MagicScriptContext;
 public class CustomPageProvider implements PageProvider {
 
 	@Override
-	public Page getPage(MagicScriptContext context) {
+	public Page getPage(RuntimeContext context) {
 		// 从Request中提取page以及pageSize
-		long page = NumberUtils.toLong(context.getString("page"), 1);
-		long pageSize = NumberUtils.toLong(context.getString("size"), 10);
+		long page = NumberUtils.toLong(Objects.toString(context.eval("page"), ""), 1);
+		long pageSize = NumberUtils.toLong(Objects.toString(context.eval("size"), ""), 10);
 		return new Page(page, pageSize);
 	}
 }

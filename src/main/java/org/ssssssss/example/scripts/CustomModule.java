@@ -28,7 +28,7 @@ public class CustomModule implements MagicModule {
 	}
 
 	@Comment("方法名的注释(用于提示)")
-	public void println(@Comment("参数名的提示(用于提示)")String value) {
+	public void println(@Comment(name = "value", value = "参数名的提示(用于提示)")String value) {
 		System.out.println(value);
 	}
 }
