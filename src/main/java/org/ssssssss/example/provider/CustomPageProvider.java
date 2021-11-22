@@ -21,6 +21,6 @@ public class CustomPageProvider implements PageProvider {
 		// 从Request中提取page以及pageSize
 		long page = NumberUtils.toLong(Objects.toString(context.eval("page"), ""), 1);
 		long pageSize = NumberUtils.toLong(Objects.toString(context.eval("size"), ""), 10);
-		return new Page(page, pageSize);
+		return new Page(pageSize, (page - 1) * pageSize);
 	}
 }
