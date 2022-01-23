@@ -10,9 +10,9 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
-    url: jdbc:mysql://localhost/magic?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://127.0.0.1:3306/magic-api?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=Asia/Shanghai
     username: root
-    password: 123456789
+    password: root
 #  data:
     # 配置mongo数据源
 #    mongodb:
@@ -33,5 +33,19 @@ magic-api:
     type: database  # 配置接口存储方式，这里选择存在数据库中
     table-name: magic_api_file  # 数据库中的表名
     prefix: /magic-api  # 前缀
-#    location: classpath:magic-api
-# 其它配置请参考 https://ssssssss.org/config/
+  #    location: classpath:magic-api
+  # 其它配置请参考 https://ssssssss.org/config/
+  response-code-config:
+    success: 200 #执行成功的code值
+    invalid: 400 #参数验证未通过的code值
+    exception: 500 #执行出现异常的code值
+  #自定义响应Json结构
+  response: |- #配置JSON格式，格式为magic-script中的表达式
+    {
+      status: code,
+      msg: message,
+      data,
+      timestamp,
+      requestTime,
+      executeTime,
+    }
