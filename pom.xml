@@ -10,8 +10,8 @@
         <version>2.4.5</version>
         <relativePath/>
     </parent>
-    <groupId>org.ssssssss</groupId>
-    <artifactId>magic-api</artifactId>
+    <groupId>space.istio</groupId>
+    <artifactId>magic-api-amis</artifactId>
     <version>1.7.5</version>
     <dependencies>
         <dependency>
